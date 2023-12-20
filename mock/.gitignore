@@ -1,0 +1,57 @@
+﻿# Visual Studio files
+.suo
+.vs
+.vscode
+*.sln
+*.DotSettings
+*.filters
+*.cache
+*.user
+
+# Build outputs
+obj/
+bin/
+*.pdb
+*.xml
+*.dll
+*.exe
+*.js
+*.css
+*.dat
+
+# Test results
+TestResults/
+vstest.log
+coverage.txt
+
+# NuGet packages
+*.nupkg
+# PackageLock.json
+
+# Publish outputs
+publish/
+
+# Temporary files
+tmp/
+
+# Logs
+logs/
+
+# Documentacion
+docs/
+
+mock/Properties
+mock/obj
+
+# Otros archivos temporales
+*.temporary
+*.lock
+
+# Entorno Docker
+docker-compose.yml
+dockerfile
+*mock/.idea/
+# Configuraciones específicas de entornos
+# (puedes agregar archivos específicos para ambientes diferentes)
+.env.staging
+.env.production
