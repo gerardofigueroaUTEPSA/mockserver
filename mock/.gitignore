@@ -18,7 +18,7 @@ bin/
 *.js
 *.css
 *.dat
-
+mock/Properties/
 # Test results
 TestResults/
 vstest.log
@@ -39,10 +39,10 @@ logs/
 
 # Documentacion
 docs/
-
+.idea/
 mock/Properties
 mock/obj
-
+Propierties/
 # Otros archivos temporales
 *.temporary
 *.lock
