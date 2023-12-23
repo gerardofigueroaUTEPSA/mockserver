@@ -1,0 +1,204 @@
+﻿{
+  "transactionHistory": [
+    {
+      "transactionReferenceId": "04052020/305/050/001/0025",
+      "transactionAmount": 40,
+      "transactionAccountId": "",
+      "transactionCurrencyCode": "",
+      "transactionDebitCredit": "C",
+      "transactionDate": "2023-12-10T11:38:55Z",
+      "transactionChannelCode": "4",
+      "transactionBranchCode": "300",
+      "transactionBeneficiary": {
+        "text": ""
+      },
+      "transactionType": {
+        "moduleCode": 0,
+        "transactionNumberCode": 0,
+        "ordinalCode": 0,
+        "description": ""
+      },
+      "transactionDescription": {
+        "text": "DEPOSITO EFECTIVO BOLIVIANOS"
+      },
+      "transactionClientNote": {
+        "text": "User 3 pagina 1"
+      }
+    },
+    {
+      "transactionReferenceId": "04052020/305/050/001/0025",
+      "transactionAmount": 60,
+      "transactionAccountId": "",
+      "transactionCurrencyCode": "",
+      "transactionDebitCredit": "C",
+      "transactionDate": "2023-12-10T11:38:55Z",
+      "transactionChannelCode": "4",
+      "transactionBranchCode": "300",
+      "transactionBeneficiary": {
+        "text": ""
+      },
+      "transactionType": {
+        "moduleCode": 0,
+        "transactionNumberCode": 0,
+        "ordinalCode": 0,
+        "description": ""
+      },
+      "transactionDescription": {
+        "text": "DEPOSITO EFECTIVO BOLIVIANOS"
+      },
+      "transactionClientNote": {
+        "text": "User 3 pagina 2"
+      }
+    },
+    {
+      "transactionReferenceId": "04052020/305/050/001/0025",
+      "transactionAmount": 440,
+      "transactionAccountId": "",
+      "transactionCurrencyCode": "",
+      "transactionDebitCredit": "C",
+      "transactionDate": "2023-12-10T11:38:55Z",
+      "transactionChannelCode": "4",
+      "transactionBranchCode": "300",
+      "transactionBeneficiary": {
+        "text": ""
+      },
+      "transactionType": {
+        "moduleCode": 0,
+        "transactionNumberCode": 0,
+        "ordinalCode": 0,
+        "description": ""
+      },
+      "transactionDescription": {
+        "text": "DEPOSITO EFECTIVO BOLIVIANOS"
+      },
+      "transactionClientNote": {
+        "text": "User 3 pagina 3"
+      }
+    },
+    {
+      "transactionReferenceId": "04052020/305/050/001/0025",
+      "transactionAmount": 300,
+      "transactionAccountId": "",
+      "transactionCurrencyCode": "",
+      "transactionDebitCredit": "C",
+      "transactionDate": "2023-12-10T11:38:55Z",
+      "transactionChannelCode": "4",
+      "transactionBranchCode": "300",
+      "transactionBeneficiary": {
+        "text": ""
+      },
+      "transactionType": {
+        "moduleCode": 0,
+        "transactionNumberCode": 0,
+        "ordinalCode": 0,
+        "description": ""
+      },
+      "transactionDescription": {
+        "text": "DEPOSITO EFECTIVO BOLIVIANOS"
+      },
+      "transactionClientNote": {
+        "text": "User 3 pagina 4"
+      }
+    },
+    {
+      "transactionReferenceId": "04052020/305/050/001/0025",
+      "transactionAmount": 40,
+      "transactionAccountId": "",
+      "transactionCurrencyCode": "",
+      "transactionDebitCredit": "C",
+      "transactionDate": "2023-12-10T11:38:55Z",
+      "transactionChannelCode": "4",
+      "transactionBranchCode": "300",
+      "transactionBeneficiary": {
+        "text": ""
+      },
+      "transactionType": {
+        "moduleCode": 0,
+        "transactionNumberCode": 0,
+        "ordinalCode": 0,
+        "description": ""
+      },
+      "transactionDescription": {
+        "text": "DEPOSITO EFECTIVO BOLIVIANOS"
+      },
+      "transactionClientNote": {
+        "text": "User 3 pagina 5"
+      }
+    },
+    {
+      "transactionReferenceId": "04052020/305/050/001/0025",
+      "transactionAmount": 1000,
+      "transactionAccountId": "",
+      "transactionCurrencyCode": "",
+      "transactionDebitCredit": "C",
+      "transactionDate": "2023-12-10T11:38:55Z",
+      "transactionChannelCode": "4",
+      "transactionBranchCode": "300",
+      "transactionBeneficiary": {
+        "text": ""
+      },
+      "transactionType": {
+        "moduleCode": 0,
+        "transactionNumberCode": 0,
+        "ordinalCode": 0,
+        "description": ""
+      },
+      "transactionDescription": {
+        "text": "DEPOSITO EFECTIVO BOLIVIANOS"
+      },
+      "transactionClientNote": {
+        "text": "User 3 pagina 6"
+      }
+    },
+    {
+      "transactionReferenceId": "04052020/305/050/001/0025",
+      "transactionAmount": 500,
+      "transactionAccountId": "",
+      "transactionCurrencyCode": "",
+      "transactionDebitCredit": "C",
+      "transactionDate": "2023-12-05T11:38:55Z",
+      "transactionChannelCode": "4",
+      "transactionBranchCode": "300",
+      "transactionBeneficiary": {
+        "text": ""
+      },
+      "transactionType": {
+        "moduleCode": 0,
+        "transactionNumberCode": 0,
+        "ordinalCode": 0,
+        "description": ""
+      },
+      "transactionDescription": {
+        "text": "DEPOSITO EFECTIVO BOLIVIANOS"
+      },
+      "transactionClientNote": {
+        "text": "User 3 pagina 7"
+      }
+    },
+    {
+      "transactionReferenceId": "04052020/305/050/001/0025",
+      "transactionAmount": 40,
+      "transactionAccountId": "",
+      "transactionCurrencyCode": "",
+      "transactionDebitCredit": "C",
+      "transactionDate": "2023-12-05T11:38:55Z",
+      "transactionChannelCode": "4",
+      "transactionBranchCode": "300",
+      "transactionBeneficiary": {
+        "text": ""
+      },
+      "transactionType": {
+        "moduleCode": 0,
+        "transactionNumberCode": 0,
+        "ordinalCode": 0,
+        "description": ""
+      },
+      "transactionDescription": {
+        "text": "DEPOSITO EFECTIVO BOLIVIANOS"
+      },
+      "transactionClientNote": {
+        "text": "User 3 pagina 8"
+      }
+    }
+  ]
+}
