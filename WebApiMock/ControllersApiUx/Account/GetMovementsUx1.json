@@ -1,0 +1,66 @@
+﻿[
+  {
+    "referenceId": "04052020/305/050/001/0025",
+    "amount": 40,
+    "debitCredit": "Credit",
+    "date": "2023-12-10T11:38:55Z",
+    "title": "Beneficiario 2",
+    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+  },
+  {
+    "referenceId": "04052020/305/050/001/0025",
+    "amount": 60,
+    "debitCredit": "Debit",
+    "date": "2023-12-10T11:38:55Z",
+    "title": "Beneficiario 3",
+    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+  },
+  {
+    "referenceId": "04052020/305/050/001/0025",
+    "amount": 440,
+    "debitCredit": "Credit",
+    "date": "2023-12-10T11:38:55Z",
+    "title": "Beneficiario 5",
+    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+  },
+  {
+    "referenceId": "04052020/305/050/001/0025",
+    "amount": 300,
+    "debitCredit": "Debit",
+    "date": "2023-12-10T11:38:55Z",
+    "title": "Beneficiario 5",
+    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+  },
+  {
+    "referenceId": "04052020/305/050/001/0025",
+    "amount": 40,
+    "debitCredit": "Debit",
+    "date": "2023-12-10T11:38:55Z",
+    "title": "Beneficiario 4",
+    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+  },
+  {
+    "referenceId": "04052020/305/050/001/0025",
+    "amount": 1000,
+    "debitCredit": "Credit",
+    "date": "2023-12-10T11:38:55Z",
+    "title": "Beneficiario 5",
+    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+  },
+  {
+    "referenceId": "04052020/305/050/001/0025",
+    "amount": 500,
+    "debitCredit": "Debit",
+    "date": "2023-12-05T11:38:55Z",
+    "title": "Beneficiario 3",
+    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+  },
+  {
+    "referenceId": "04052020/305/050/001/0025",
+    "amount": 40,
+    "debitCredit": "Credit",
+    "date": "2023-12-05T11:38:55Z",
+    "title": "Beneficiario 2",
+    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+  }
+]
