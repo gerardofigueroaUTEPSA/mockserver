@@ -60,7 +60,7 @@ public class AccountController : ControllerBase
 
             result.TransactionHistory = result.TransactionHistory.Skip(limit * (page - 1)).Take(limit).ToList();
 
-            if (data is null || data.TransactionHistory is null || data.TransactionHistory.Count == 0) return NoContent();
+            if (result is null || result.TransactionHistory is null || result.TransactionHistory.Count == 0) return NoContent();
             return Ok(result);
         }
     }
