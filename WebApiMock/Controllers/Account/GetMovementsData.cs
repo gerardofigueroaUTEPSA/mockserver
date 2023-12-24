@@ -34,7 +34,6 @@ public class TransactionData
     public string TransactionBranchCode { get; set; } = "295";
     public TransactionDescription TransactionBeneficiary { get; set; }
     public TransactionType TransactionType { get; set; }
-    public TransactionCode TransactionCode { get; set; } = new TransactionCode { Code = 1522, GroupCode = 400200 };
     public TransactionDescription TransactionDescription { get; set; } = new TransactionDescription { Text = "Pago QR ACH"};
     public TransactionDescription TransactionClientNote { get; set; } = new TransactionDescription
     {
