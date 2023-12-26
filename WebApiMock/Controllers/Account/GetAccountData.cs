@@ -68,8 +68,61 @@ public static class GetAccountData
             AccountRetaindedBalance = 0
         };
 
+        var account4 = new AccountModel
+        {
+            AccountCodeDisplay = "4444444-000-004",
+            AccountCode = "127366",
+            AccountTypeCode = "CA",
+            AccountBranchCode = 700,
+            AccountProductName = "C.A. P. Fisica M/N",
+            AccountHolderName = "Percy Tellez",
+            AccountClientCode = 1,
+            AccountStatus = "NORMAL",
+            AccountCurrency = 1,
+            AccountAvailableBalance = 14100.5,
+            AccountTotalBalance = 14100.5,
+            AccountRetaindedBalance = 0
+        };
+
+        var account5 = new AccountModel
+        {
+            AccountCodeDisplay = "3333333-000-003",
+            AccountCode = "127366",
+            AccountTypeCode = "CA",
+            AccountBranchCode = 700,
+            AccountProductName = "C.A. P. Fisica M/N",
+            AccountHolderName = "Percy Tellez",
+            AccountClientCode = 1,
+            AccountStatus = "NORMAL",
+            AccountCurrency = 1,
+            AccountAvailableBalance = 5213.10,
+            AccountTotalBalance = 5213.10,
+            AccountRetaindedBalance = 0
+        };
+
+        var account6 = new AccountModel
+        {
+            AccountCodeDisplay = "3333333-000-003",
+            AccountCode = "127366",
+            AccountTypeCode = "CA",
+            AccountBranchCode = 700,
+            AccountProductName = "C.A. P. Fisica M/N",
+            AccountHolderName = "Percy Tellez",
+            AccountClientCode = 1,
+            AccountStatus = "NORMAL",
+            AccountCurrency = 1,
+            AccountAvailableBalance = 5213.10,
+            AccountTotalBalance = 5213.10,
+            AccountRetaindedBalance = 0
+        };
+
         if (id == "1000000C-0000-0000-000C-1111C1111C11") { return account1; }
         if (id == "2000000C-0000-0000-000C-2222C2222C22") { return account2; }
-        return account3;
+        if (id == "3000000C-0000-0000-000C-3333C3333C33") { return account3; }
+        if (id == "4000000C-0000-0000-000C-4444C4444C44") { return account4; }
+        if (id == "5000000C-0000-0000-000C-5555C5555C55") { return account5; }
+        if (id == "6000000C-0000-0000-000C-6666C6666C66") { return account6; }
+
+        return account6;
     }
 }

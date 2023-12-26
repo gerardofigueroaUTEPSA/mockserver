@@ -25,6 +25,15 @@ namespace WebApiMock.ControllersApiUx.Account
                 case "3000000C-0000-0000-000C-3333C3333C33":
                     filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccount3.json");
                     break;
+                case "4000000C-0000-0000-000C-4444C4444C44":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccount4.json");
+                    break;
+                case "5000000C-0000-0000-000C-5555C5555C55":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccount5.json");
+                    break;
+                case "6000000C-0000-0000-000C-6666C6666C66":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccount6.json");
+                    break;
                 default:
                     filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccount1.json");
                     break;
@@ -54,6 +63,15 @@ namespace WebApiMock.ControllersApiUx.Account
                     return NoContent();
                 case "3000000C-0000-0000-000C-3333C3333C33":
                     filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetMovementsUx3.json");
+                    break;
+                case "4000000C-0000-0000-000C-4444C4444C44":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetMovementsUx4.json");
+                    break;
+                case "5000000C-0000-0000-000C-5555C5555C55":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetMovementsUx5.json");
+                    break;
+                case "6000000C-0000-0000-000C-6666C6666C66":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetMovementsUx6.json");
                     break;
                 default:
                     filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetMovementsUx1.json");
@@ -97,6 +115,15 @@ namespace WebApiMock.ControllersApiUx.Account
                     filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccountDailyBalance2.json");
                     break;
                 case "3000000C-0000-0000-000C-3333C3333C33":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccountDailyBalance3.json");
+                    break;
+                case "4000000C-0000-0000-000C-4444C4444C44":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccountDailyBalance3.json");
+                    break;
+                case "5000000C-0000-0000-000C-5555C5555C55":
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccountDailyBalance3.json");
+                    break;
+                case "6000000C-0000-0000-000C-6666C6666C66":
                     filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetAccountDailyBalance3.json");
                     break;
                 default:
