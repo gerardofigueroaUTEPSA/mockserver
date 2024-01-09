@@ -5,7 +5,8 @@
     "debitCredit": "Credit",
     "date": "2023-12-10T11:38:55Z",
     "title": "Beneficiario 9",
-    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+    "typeTransaction": "Pago QR",
+    "status": "Confirmed"
   },
   {
     "referenceId": "04052020/305/050/001/0025",
@@ -13,7 +14,8 @@
     "debitCredit": "Debit",
     "date": "2023-12-10T11:38:55Z",
     "title": "Beneficiario 3",
-    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+    "typeTransaction": "Pago QR",
+    "status": "Refused"
   },
   {
     "referenceId": "04052020/305/050/001/0025",
@@ -21,7 +23,8 @@
     "debitCredit": "Credit",
     "date": "2023-12-10T11:38:55Z",
     "title": "Beneficiario 8",
-    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+    "typeTransaction": "Pago QR",
+    "status": "Earring"
   },
   {
     "referenceId": "04052020/305/050/001/0025",
@@ -29,7 +32,8 @@
     "debitCredit": "Debit",
     "date": "2023-12-10T11:38:55Z",
     "title": "Beneficiario 7",
-    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+    "typeTransaction": "Pago QR",
+    "status": "Confirmed"
   },
   {
     "referenceId": "04052020/305/050/001/0025",
@@ -37,7 +41,8 @@
     "debitCredit": "Debit",
     "date": "2023-12-10T11:38:55Z",
     "title": "Beneficiario 6",
-    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+    "typeTransaction": "Pago QR",
+    "status": "Confirmed"
   },
   {
     "referenceId": "04052020/305/050/001/0025",
@@ -45,7 +50,8 @@
     "debitCredit": "Credit",
     "date": "2023-12-10T11:38:55Z",
     "title": "Beneficiario 7",
-    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+    "typeTransaction": "Pago QR",
+    "status": "Confirmed"
   },
   {
     "referenceId": "04052020/305/050/001/0025",
@@ -53,7 +59,8 @@
     "debitCredit": "Debit",
     "date": "2023-12-05T11:38:55Z",
     "title": "Beneficiario 6",
-    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+    "typeTransaction": "Pago QR",
+    "status": "Confirmed"
   },
   {
     "referenceId": "04052020/305/050/001/0025",
@@ -61,6 +68,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-05T11:38:55Z",
     "title": "Beneficiario 8",
-    "typeTransaction": "DEPOSITO EFECTIVO BOLIVIANOS"
+    "typeTransaction": "Pago QR",
+    "status": "Confirmed"
   }
 ]

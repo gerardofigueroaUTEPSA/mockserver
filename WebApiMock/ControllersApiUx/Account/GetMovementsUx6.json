@@ -5,7 +5,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-19T18:40:25",
     "title": "Juan Carlos P1",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1521",
@@ -13,7 +13,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-19T18:40:25",
     "title": "Jose Carlos P2",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1520",
@@ -21,7 +21,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-19T18:40:25",
     "title": "Sergio P3",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1519",
@@ -29,7 +29,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-19T18:40:25",
     "title": "Juanito P4",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1518",
@@ -37,7 +37,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-15T18:40:25",
     "title": "Yolanda Tomicha P5",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1502",
@@ -45,7 +45,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-15T18:40:25",
     "title": "Marcelo Tellez P6",
-    "typeTransaction": "Cobro QR"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -53,7 +53,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-15T18:40:25",
     "title": "Pablo Sejas P7",
-    "typeTransaction": "Transferencia ACH"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -61,7 +61,7 @@
     "debitCredit": "Debit",
     "date": "2023-12-10T18:40:24",
     "title": "Percy Solano P8",
-    "typeTransaction": "Transferencia Terceros"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -69,7 +69,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-09T18:40:24",
     "title": "Edwin Quispe P9",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -77,7 +77,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-09T18:40:24",
     "title": "Rene Antelo P10",
-    "typeTransaction": "Cobro QR"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1522",
@@ -85,7 +85,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-09T18:40:24",
     "title": "Juan Carlos P11",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1521",
@@ -93,7 +93,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-09T18:40:24",
     "title": "Jose Carlos P12",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1520",
@@ -101,7 +101,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-09T18:40:24",
     "title": "Sergio P13",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1519",
@@ -109,7 +109,7 @@
     "debitCredit": "Credit",
     "date": "2023-12-09T18:40:24",
     "title": "Juanito P14",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1518",
@@ -117,7 +117,7 @@
     "debitCredit": "Credit",
     "date": "2023-11-30T18:40:25",
     "title": "Yolanda Tomicha P15",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1502",
@@ -125,7 +125,7 @@
     "debitCredit": "Credit",
     "date": "2023-11-30T18:40:25",
     "title": "Marcelo Tellez P16",
-    "typeTransaction": "Cobro QR"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -133,7 +133,7 @@
     "debitCredit": "Credit",
     "date": "2023-11-30T18:40:25",
     "title": "Pablo Sejas P17",
-    "typeTransaction": "Transferencia ACH"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -141,7 +141,7 @@
     "debitCredit": "Debit",
     "date": "2023-11-30T18:40:25",
     "title": "Percy Solano P18",
-    "typeTransaction": "Transferencia Terceros"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -149,7 +149,7 @@
     "debitCredit": "Credit",
     "date": "2023-11-30T18:40:25",
     "title": "Edwin Quispe P19",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -157,7 +157,7 @@
     "debitCredit": "Credit",
     "date": "2023-11-20T18:40:25",
     "title": "Rene Antelo P20",
-    "typeTransaction": "Cobro QR"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1522",
@@ -165,7 +165,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-30T18:40:25",
     "title": "Juan Carlos P21",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1521",
@@ -173,7 +173,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-30T18:40:25",
     "title": "Jose Carlos P22",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1520",
@@ -181,7 +181,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-30T18:40:25",
     "title": "Sergio P23",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1519",
@@ -189,7 +189,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-30T18:40:25",
     "title": "Juanito P23",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1518",
@@ -197,7 +197,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-20T18:40:25",
     "title": "Yolanda Tomicha P25",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1502",
@@ -205,7 +205,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-20T18:40:25",
     "title": "Marcelo Tellez P26",
-    "typeTransaction": "Cobro QR"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -213,7 +213,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-20T18:40:25",
     "title": "Pablo Sejas P27",
-    "typeTransaction": "Transferencia ACH"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -221,7 +221,7 @@
     "debitCredit": "Debit",
     "date": "2023-10-20T18:40:25",
     "title": "Percy Solano P28",
-    "typeTransaction": "Transferencia Terceros"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -229,7 +229,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-20T18:40:25",
     "title": "Edwin Quispe P29",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -237,7 +237,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-12T18:40:25",
     "title": "Rene Antelo P30",
-    "typeTransaction": "Cobro QR"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1522",
@@ -245,7 +245,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-11T18:40:25",
     "title": "Juan Carlos P31",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1521",
@@ -253,7 +253,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-10T18:40:25",
     "title": "Jose Carlos P32",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1520",
@@ -261,7 +261,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-09T18:40:25",
     "title": "Sergio P33",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1519",
@@ -269,7 +269,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-08T18:40:25",
     "title": "Juanito P34",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1518",
@@ -277,7 +277,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-07T18:40:25",
     "title": "Yolanda Tomicha P35",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1502",
@@ -285,7 +285,7 @@
     "debitCredit": "Credit",
     "date": "2023-10-02T18:40:25",
     "title": "Marcelo Tellez P36",
-    "typeTransaction": "Cobro QR"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -293,7 +293,7 @@
     "debitCredit": "Credit",
     "date": "2023-09-10T18:40:25",
     "title": "Pablo Sejas P37",
-    "typeTransaction": "Transferencia ACH"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -301,7 +301,7 @@
     "debitCredit": "Debit",
     "date": "2023-09-10T18:40:25",
     "title": "Percy Solano P38",
-    "typeTransaction": "Transferencia Terceros"
+    "typeTransaction": "Cobro QR", "status": "Confirmed"
   },
   {
     "referenceId": "10102023/295/400/200/1517",
@@ -309,6 +309,6 @@
     "debitCredit": "Credit",
     "date": "2023-09-10T18:40:25",
     "title": "Edwin Quispe P39",
-    "typeTransaction": "Pago QR"
+    "typeTransaction": "Pago QR", "status": "Confirmed"
   }
 ]

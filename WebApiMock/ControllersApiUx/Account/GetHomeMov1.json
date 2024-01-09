@@ -1,0 +1,163 @@
+﻿[
+  {
+    "id": "abcd1",
+    "amount": 100,
+    "debitCredit": "Credit",
+    "date": "2023-12-10T11:38:55Z",
+    // estos dos solo estan en la lista
+    "title": "Carlos Andres",
+    "transactionTypeDescription": "QR recibido ACH",
+    //--------------------------------------
+    "voucher": "10245050",
+    "currency": "Bs",
+    "status": "Confirmed",
+    // comprobante
+    "description": "Regalo de Navidad",
+    "originName": "Carlos Andres",
+    "originAccount": "9982929292",
+    "originBank": "Banco Nacional de Bolivia",
+    "destinationName": "Juan Perez",
+    "destinationAccount": "1111111-000-001",
+    "destinationBank": "Solucion de Pagos",
+    "transactionType": "ChargeQRAch"
+    //------------------------------------------------------
+  },
+  {
+    "id": "abcd2",
+    "amount": 200,
+    "debitCredit": "Debit",
+    "date": "2023-12-10T11:38:55Z",
+    // estos dos solo estan en la lista
+    "title": "Carlos Andres",
+    "transactionTypeDescription": "QR pagado ACH",
+    //--------------------------------------
+    "voucher": "20245050",
+    "currency": "Bs",
+    "status": "Confirmed",
+    // comprobante
+    "description": "Regalo de Navidad",
+    "originName": "Juan Perez",
+    "originAccount": "1111111-000-001",
+    "originBank": "Solucion de Pagos",
+    "destinationName": "Carlos Andres",
+    "destinationAccount": "9982929292",
+    "destinationBank": "Banco Nacional de Bolivia",
+    "transactionType": "PayQRAch"
+    //------------------------------------------------------
+  },
+  {
+    "id": "abcd3",
+    "amount": 300,
+    "debitCredit": "Debit",
+    "date": "2023-12-10T11:38:55Z",
+    // estos dos solo estan en la lista
+    "title": "Carlos Andres",
+    "transactionTypeDescription": "QR pagado ACH",
+    //--------------------------------------
+    "voucher": "30245050",
+    "currency": "Bs",
+    "status": "Confirmed",
+    // comprobante
+    "description": "Regalo de Navidad",
+    "originName": "Juan Perez",
+    "originAccount": "1111111-000-001",
+    "originBank": "Solucion de Pagos",
+    "destinationName": "Carlos Andres",
+    "destinationAccount": "9982929292",
+    "destinationBank": "Banco Nacional de Bolivia",
+    "transactionType": "PayQRAch"
+    //------------------------------------------------------
+  },
+  {
+    "id": "abcd4",
+    "amount": 400,
+    "debitCredit": "Credit",
+    "date": "2023-12-10T11:38:55Z",
+    // estos dos solo estan en la lista
+    "title": "Martina Chavez",
+    "transactionTypeDescription": "QR recibido Terceros",
+    //--------------------------------------
+    "voucher": "40245050",
+    "currency": "Bs",
+    "status": "Confirmed",
+    // comprobante
+    "description": "Regalo de Martina",
+    "originName": "Martina Chavez",
+    "originAccount": "9999999-000-002",
+    "originBank": "Solucion de Pagos",
+    "destinationName": "Juan Perez",
+    "destinationAccount": "1111111-000-001",
+    "destinationBank": "Solucion de Pagos",
+    "transactionType": "ChargeQRThird"
+    //------------------------------------------------------
+  },
+  {
+    "id": "abcd5",
+    "amount": 500,
+    "debitCredit": "Debit",
+    "date": "2023-12-10T11:38:55Z",
+    // estos dos solo estan en la lista
+    "title": "Martina Chavez",
+    "transactionTypeDescription": "QR pagado Terceros",
+    //--------------------------------------
+    "voucher": "50245050",
+    "currency": "Bs",
+    "status": "Confirmed",
+    // comprobante
+    "description": "Regalo de juan para martina",
+    "originName": "Juan Perez",
+    "originAccount": "1111111-000-001",
+    "originBank": "Solucion de Pagos",
+    "destinationName": "Martina Chavez",
+    "destinationAccount": "9999999-000-002",
+    "destinationBank": "Solucion de Pagos",
+    "transactionType": "PayQRThird"
+    //------------------------------------------------------
+  },
+  {
+    "id": "abcd6",
+    "amount": 600,
+    "debitCredit": "Debit",
+    "date": "2023-12-10T11:38:55Z",
+    // estos dos solo estan en la lista
+    "title": "Ximena Solano",
+    "transactionTypeDescription": "QR pagado Terceros",
+    //--------------------------------------
+    "voucher": "",
+    "currency": "Bs",
+    "status": "Refused",
+    // comprobante
+    "description": "Regalo de Juan para Ximena",
+    "originName": "Juan Perez",
+    "originAccount": "1111111-000-001",
+    "originBank": "Solucion de Pagos",
+    "destinationName": "Ximena Solano",
+    "destinationAccount": "9999999-000-002",
+    "destinationBank": "Solucion de Pagos",
+    "transactionType": "PayQRThird"
+    //------------------------------------------------------
+  },
+  {
+    "id": "abcd7",
+    "amount": 700,
+    "debitCredit": "Debit",
+    "date": "2023-12-10T11:38:55Z",
+    // estos dos solo estan en la lista
+    "title": "Gerardo Sejas",
+    "transactionTypeDescription": "QR pagado ACH",
+    //--------------------------------------
+    "voucher": "",
+    "currency": "Bs",
+    "status": "Refused",
+    // comprobante
+    "description": "Regalo de Navidad",
+    "originName": "Juan Perez",
+    "originAccount": "1111111-000-001",
+    "originBank": "Solucion de Pagos",
+    "destinationName": "Gerardo Sejas",
+    "destinationAccount": "9982929292",
+    "destinationBank": "Banco Nacional de Bolivia",
+    "transactionType": "PayQRAch"
+    //------------------------------------------------------
+  }
+]
