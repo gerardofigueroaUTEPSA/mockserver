@@ -1,432 +1,74 @@
 ﻿[
   {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd1",
-    "amount": 40,
-    "debitCredit": "Credit",
+    "referenceId": "04052020-305-050-001-0001",
+    "title": "Ximena Antelo",
+    "typeTransaction": "Transferencia QR ACH",
+    "status": "Confirmed",
+
     "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
+    "amount": 400.10,
+    "debitCredit": "Credit",
+    //comprobante
+    "TransactionType": "PayQRAch",
+    "TransactionTypeDescription": "Transferencia QR ACH",
+    "AccountName": "Ximena Antelo",
+    "AccountNumber": "292929292",
+    "AccountBank": "Banco Economico",
+    "Voucher": "1002020302",
+    "Description": "Pago de Alquiler"
   },
   {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd2",
-    "amount": 60,
-    "debitCredit": "Debit",
+    "referenceId": "04052020-305-050-001-0002",
+    "title": "Juan Jose",
+    "typeTransaction": "Transferencia QR ACH",
+    "status": "Confirmed",
+
     "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Refused"
+    "amount": 55.20,
+    "debitCredit": "Debit",
+    //comprobante
+    "TransactionType": "PayQRThird",
+    "TransactionTypeDescription": "Transferencia QR Terceros",
+    "AccountName": "Juan Jose",
+    "AccountNumber": "292929292",
+    "AccountBank": "Banco Economico",
+    "Voucher": "1002020302",
+    "Description": "Pago de Almuerzo"
   },
   {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd3",
-    "amount": 440,
-    "debitCredit": "Credit",
+    "referenceId": "04052020-305-050-001-0003",
+    "title": "Retiro sin Tarjeta",
+    "typeTransaction": "Retiro",
+    "status": "Confirmed",
+
     "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
+    "amount": 150,
+    "debitCredit": "Debit",
+    //comprobante
+    "TransactionType": "WithdrawalWithoutCard",
+    "TransactionTypeDescription": "Retiro sin Tarjeta",
+    "AccountName": "",
+    "AccountNumber": "",
+    "AccountBank": "",
+    "Voucher": "1002020302",
+    "Description": ""
   },
   {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd4",
-    "amount": 300,
-    "debitCredit": "Debit",
+    "referenceId": "04052020-305-050-001-0004",
+    "title": "Extracción ATM",
+    "typeTransaction": "Retiro",
+    "status": "Confirmed",
+
     "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Refused"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd5",
-    "amount": 40,
+    "amount": 600,
     "debitCredit": "Debit",
-    "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 4",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd6",
-    "amount": 1000,
-    "debitCredit": "Credit",
-    "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd7",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Earring"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd8",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd9",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Earring"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd10",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Refused"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd11",
-    "amount": 1000,
-    "debitCredit": "Credit",
-    "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd12",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Earring"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd13",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd14",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Refused"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd15",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd16",
-    "amount": 1000,
-    "debitCredit": "Credit",
-    "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Refused"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd17",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Earring"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd18",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd19",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd20",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Refused"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd21",
-    "amount": 1000,
-    "debitCredit": "Credit",
-    "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd22",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Earring"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd23",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd24",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Earring"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd25",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Refused"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd26",
-    "amount": 1000,
-    "debitCredit": "Credit",
-    "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd27",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd28",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd29",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd30",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd31",
-    "amount": 1000,
-    "debitCredit": "Credit",
-    "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd32",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd33",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd34",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd35",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd36",
-    "amount": 1000,
-    "debitCredit": "Credit",
-    "date": "2023-12-10T11:38:55Z",
-    "title": "Beneficiario 5",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd37",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd38",
-    "amount": 40,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd39",
-    "amount": 500,
-    "debitCredit": "Debit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 3",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd40",
-    "amount": 50,
-    "debitCredit": "Credit",
-    "date": "2023-12-05T11:38:55Z",
-    "title": "Beneficiario 2: N:40",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd41",
-    "amount": 70,
-    "debitCredit": "Credit",
-    "date": "2023-11-05T11:38:55Z",
-    "title": "Beneficiario 2: N:41",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd42",
-    "amount": 500,
-    "debitCredit": "Credit",
-    "date": "2023-11-05T11:38:55Z",
-    "title": "Beneficiario 2: N:42",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
-  },
-  {
-    "referenceId": "04052020/305/050/001/0025",
-    "id": "abcd43",
-    "amount": 900,
-    "debitCredit": "Credit",
-    "date": "2023-11-05T11:38:55Z",
-    "title": "Beneficiario 2: N:43",
-    "typeTransaction": "Pago Qr",
-    "status": "Confirmed"
+    //comprobante
+    "TransactionType": "WithdrawalCashier",
+    "TransactionTypeDescription": "Extracción ATM",
+    "AccountName": "",
+    "AccountNumber": "",
+    "AccountBank": "",
+    "Voucher": "1002020302",
+    "Description": ""
   }
 ]

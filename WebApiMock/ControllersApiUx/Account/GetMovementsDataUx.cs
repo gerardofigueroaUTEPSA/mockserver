@@ -1,4 +1,6 @@
-﻿namespace WebApiMock.ControllersApiUx.Account
+﻿using Microsoft.Extensions.Diagnostics.HealthChecks;
+
+namespace WebApiMock.ControllersApiUx.Account
 {
     public class GetMovementsDataUx
     {
@@ -49,5 +51,22 @@
         public string DestinationName { get; set; } 
         public string DestinationAccount { get; set; } 
         public string DestinationBank { get; set; }
+    }
+
+    public class ComprobanteCore
+    {
+        public string ReferenceId { get; set; }
+        public decimal Amount { get; set; }
+        public string DebitCredit { get; set; }
+        public DateTime Date { get; set; }
+        public string Voucher { get; set; }
+        public string Currency { get; set; } = "Bs";
+
+        public string TransactionType { get; set; }
+        public string TransactionTypeDescription { get; set; }
+        public string AccountName { get; set; }
+        public string AccountNumber { get; set; }
+        public string AccountBank { get; set; }
+        public string Description { get; set; }
     }
 }

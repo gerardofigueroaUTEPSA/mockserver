@@ -214,16 +214,16 @@ namespace WebApiMock.ControllersApiUx.Account
                 case "74655611":
                     return BadRequest(new ErrorResponse { Errors = new List<Error> { 
                         new Error { 
-                            Code = "generalErrors", 
-                            Name = "Revisa si el celular registrado es correcto o registra otro número que te pertenezca", 
-                            Reason = "existing_phone_number" 
+                            Name = "generalErrors", 
+                            Reason = "Revisa si el celular registrado es correcto o registra otro número que te pertenezca", 
+                            Code = "existing_phone_number" 
                         } } });
                 case "74655612":
                     return BadRequest(new ErrorResponse { Errors = new List<Error> { 
                         new Error { 
-                            Code = "generalErrors", 
-                            Name = "Llegaste al limite de cuentas 5 ingresa con tu número de celular y tu PIN", 
-                            Reason = "max_client_accounts"
+                            Name = "generalErrors",
+                            Reason = "Llegaste al limite de cuentas 5 ingresa con tu número de celular y tu PIN", 
+                            Code = "max_client_accounts"
                         } } });
                 case "74655613":
                     return Ok(new ValidateClientRegisterResponse 
@@ -235,6 +235,21 @@ namespace WebApiMock.ControllersApiUx.Account
                     {
                         OpenedAccounts = 1
                     });
+            }
+        }
+
+        [HttpGet]
+        [Produces("application/json")]
+        [Route("/v1/pagos/bff/history/{voucherId}/voucher")]
+        public ActionResult<ComprobanteCore> GetVoucher([FromRoute] string voucherId)
+        {
+            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetMovementsUx1.json");
+            using (StreamReader r = new StreamReader(filePath, Encoding.UTF8))
+            {
+                string json = r.ReadToEnd();
+                var data = JsonConvert.DeserializeObject<List<ComprobanteCore>>(json);
+                var result = data!.FirstOrDefault(x => x.ReferenceId == voucherId);
+                return Ok(result);
             }
         }
     }
