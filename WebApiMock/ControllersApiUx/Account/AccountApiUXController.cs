@@ -211,6 +211,16 @@ namespace WebApiMock.ControllersApiUx.Account
         {
             switch (request.PhoneNumber)
             {
+                case "74655610":
+                    return BadRequest(new ErrorResponse
+                    {
+                        Errors = new List<Error> {
+                        new Error {
+                            Name = "generalErrors",
+                            Reason = "Necesitamos algunos datos adicionales, acude a cualquier agencia de BancoSol.",
+                            Code = "client_restrictive_list"
+                        } }
+                    });
                 case "74655611":
                     return BadRequest(new ErrorResponse { Errors = new List<Error> { 
                         new Error { 
@@ -244,7 +254,7 @@ namespace WebApiMock.ControllersApiUx.Account
                             PlaceBirth = "Santa Cruz de la Sierra",
                             DateOfBirth = new DateTime(1997, 2, 19),
                             MaritalStatus = MaritalStatusType.Single.ToString(),
-                            Gender = GenderType.Masculine.ToString(),
+                            Gender = GenderType.Male.ToString(),
                             NameSpouse = string.Empty,
                             Extension = Extension.SC.ToString(),
                             Department = Department.SantaCruz.ToString(),

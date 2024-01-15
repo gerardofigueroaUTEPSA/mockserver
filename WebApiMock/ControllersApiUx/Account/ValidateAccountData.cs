@@ -121,7 +121,7 @@
 
     public enum GenderType
     {
-        Masculine,
+        Male,
         Female
     }
 
