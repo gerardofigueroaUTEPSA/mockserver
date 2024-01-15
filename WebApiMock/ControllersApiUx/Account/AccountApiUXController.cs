@@ -233,7 +233,25 @@ namespace WebApiMock.ControllersApiUx.Account
                 default:
                     return Ok(new ValidateClientRegisterResponse
                     {
-                        OpenedAccounts = 1
+                        OpenedAccounts = 0,
+                        SegipClientResponse = new SegipClientResponse 
+                        { 
+                            CI = request.DocumentNumber,
+                            Names = "Luis Gerardo",
+                            FirstSurname = "Figueroa",
+                            SecondSurname = "Zurita",
+                            Nationality = "Boliviana",
+                            PlaceBirth = "Santa Cruz de la Sierra",
+                            DateOfBirth = new DateTime(1997, 2, 19),
+                            MaritalStatus = MaritalStatusType.Single.ToString(),
+                            Gender = GenderType.Masculine.ToString(),
+                            NameSpouse = string.Empty,
+                            Extension = Extension.SC.ToString(),
+                            Department = Department.SantaCruz.ToString(),
+                            HomeAddress = "B/Curupau 4to anillo #4025",
+                            Occupation = "Estudiante",
+                            RegisterType = IdentificationType.National.ToString()
+                        }
                     });
             }
         }
@@ -251,6 +269,33 @@ namespace WebApiMock.ControllersApiUx.Account
                 var result = data!.FirstOrDefault(x => x.ReferenceId == voucherId);
                 return Ok(result);
             }
+        }
+
+        [HttpGet]
+        [Produces("application/json")]
+        [Route("/v1/pagos/bff/client/{documentNumber}/segip")]
+        public ActionResult<SegipClientResponse> GetSegip([FromRoute] string documentNumber, [FromQuery] string complement)
+        {
+            return Ok(
+                   new SegipClientResponse
+                   {
+                       CI = documentNumber,
+                       Names = "Luis Gerardo",
+                       FirstSurname = "Figueroa",
+                       SecondSurname = "Zurita",
+                       Nationality = "Boliviana",
+                       PlaceBirth = "Santa Cruz de la Sierra",
+                       DateOfBirth = new DateTime(1997, 2, 19),
+                       MaritalStatus = MaritalStatusType.Single.ToString(),
+                       Gender = GenderType.Masculine.ToString(),
+                       NameSpouse = string.Empty,
+                       Extension = Extension.SC.ToString(),
+                       Department = Department.SantaCruz.ToString(),
+                       HomeAddress = "B/Curupau 4to anillo #4025",
+                       Occupation = "Estudiante",
+                       RegisterType = IdentificationType.National.ToString()
+                   }
+            );
         }
     }
 }
