@@ -238,12 +238,104 @@ namespace WebApiMock.ControllersApiUx.Account
                 case "74655613":
                     return Ok(new ValidateClientRegisterResponse 
                     { 
-                        OpenedAccounts = 1 
+                        OpenedAccounts = 1,
+                        IsNewClient = false,
+                        SegipClientResponse = new SegipClientResponse
+                        {
+                            CI = request.DocumentNumber,
+                            Names = "Luis Gerardo",
+                            FirstSurname = "Figueroa",
+                            SecondSurname = "Zurita",
+                            Nationality = "Boliviana",
+                            PlaceBirth = "Santa Cruz de la Sierra",
+                            DateOfBirth = new DateTime(1997, 2, 19),
+                            MaritalStatus = "C",
+                            Gender = GenderType.Male.ToString(),
+                            NameSpouse = string.Empty,
+                            Extension = Extension.SC.ToString(),
+                            Department = Department.SantaCruz.ToString(),
+                            HomeAddress = "B/Curupau 4to anillo #4025",
+                            Occupation = "Estudiante",
+                            RegisterType = IdentificationType.National.ToString()
+                        }
+                    });
+                case "74655614":
+                    return Ok(new ValidateClientRegisterResponse
+                    {
+                        OpenedAccounts = 0,
+                        IsNewClient = false,
+                        SegipClientResponse = new SegipClientResponse
+                        {
+                            CI = request.DocumentNumber,
+                            Names = "Luis Gerardo",
+                            FirstSurname = "Figueroa",
+                            SecondSurname = "Zurita",
+                            Nationality = "Boliviana",
+                            PlaceBirth = "Santa Cruz de la Sierra",
+                            DateOfBirth = new DateTime(1997, 2, 19),
+                            MaritalStatus = "C",
+                            Gender = GenderType.Male.ToString(),
+                            NameSpouse = string.Empty,
+                            Extension = Extension.SC.ToString(),
+                            Department = Department.SantaCruz.ToString(),
+                            HomeAddress = "B/Curupau 4to anillo #4025",
+                            Occupation = "Estudiante",
+                            RegisterType = IdentificationType.National.ToString()
+                        }
+                    });
+                case "74655615":
+                    return Ok(new ValidateClientRegisterResponse
+                    {
+                        OpenedAccounts = 0,
+                        IsNewClient = false,
+                        SegipClientResponse = new SegipClientResponse
+                        {
+                            CI = request.DocumentNumber,
+                            Names = "Luis Gerardo",
+                            FirstSurname = "Figueroa",
+                            SecondSurname = "Zurita",
+                            Nationality = "Boliviana",
+                            PlaceBirth = "Santa Cruz de la Sierra",
+                            DateOfBirth = new DateTime(1997, 2, 19),
+                            MaritalStatus = "C",
+                            Gender = GenderType.Male.ToString(),
+                            NameSpouse = string.Empty,
+                            Extension = Extension.SC.ToString(),
+                            Department = Department.SantaCruz.ToString(),
+                            HomeAddress = "B/Curupau 4to anillo #4025",
+                            Occupation = "Estudiante",
+                            RegisterType = IdentificationType.National.ToString()
+                        }
+                    });
+                case "74655616":
+                    return Ok(new ValidateClientRegisterResponse
+                    {
+                        OpenedAccounts = 0,
+                        IsNewClient = true,
+                        SegipClientResponse = new SegipClientResponse
+                        {
+                            CI = request.DocumentNumber,
+                            Names = "Luis Gerardo",
+                            FirstSurname = "Figueroa",
+                            SecondSurname = "Zurita",
+                            Nationality = "Boliviana",
+                            PlaceBirth = "Santa Cruz de la Sierra",
+                            DateOfBirth = new DateTime(1997, 2, 19),
+                            MaritalStatus = "S",
+                            Gender = GenderType.Male.ToString(),
+                            NameSpouse = string.Empty,
+                            Extension = Extension.SC.ToString(),
+                            Department = Department.SantaCruz.ToString(),
+                            HomeAddress = "B/Curupau 4to anillo #4025",
+                            Occupation = "Estudiante",
+                            RegisterType = IdentificationType.National.ToString()
+                        }
                     });
                 default:
                     return Ok(new ValidateClientRegisterResponse
                     {
                         OpenedAccounts = 0,
+                        IsNewClient = true,
                         SegipClientResponse = new SegipClientResponse 
                         { 
                             CI = request.DocumentNumber,
@@ -253,9 +345,9 @@ namespace WebApiMock.ControllersApiUx.Account
                             Nationality = "Boliviana",
                             PlaceBirth = "Santa Cruz de la Sierra",
                             DateOfBirth = new DateTime(1997, 2, 19),
-                            MaritalStatus = MaritalStatusType.Single.ToString(),
+                            MaritalStatus = "C",
                             Gender = GenderType.Male.ToString(),
-                            NameSpouse = string.Empty,
+                            NameSpouse = "Tylor Swift",
                             Extension = Extension.SC.ToString(),
                             Department = Department.SantaCruz.ToString(),
                             HomeAddress = "B/Curupau 4to anillo #4025",
@@ -297,7 +389,7 @@ namespace WebApiMock.ControllersApiUx.Account
                        PlaceBirth = "Santa Cruz de la Sierra",
                        DateOfBirth = new DateTime(1997, 2, 19),
                        MaritalStatus = MaritalStatusType.Single.ToString(),
-                       Gender = GenderType.Masculine.ToString(),
+                       Gender = GenderType.Male.ToString(),
                        NameSpouse = string.Empty,
                        Extension = Extension.SC.ToString(),
                        Department = Department.SantaCruz.ToString(),
@@ -306,6 +398,21 @@ namespace WebApiMock.ControllersApiUx.Account
                        RegisterType = IdentificationType.National.ToString()
                    }
             );
+        }
+
+        [HttpGet]
+        [Produces("application/json")]
+        [Route("/v1/pagos/bff/customer/onboarding/catalogs")]
+        public ActionResult<Catalogs> GetCatalog()
+        {
+            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/catalogos.json");
+
+            using(StreamReader r = new StreamReader(filePath, Encoding.UTF8))
+            {
+                string json = r.ReadToEnd();
+                var result = JsonConvert.DeserializeObject<Catalogs>(json);
+                return Ok(result);
+            }
         }
     }
 }

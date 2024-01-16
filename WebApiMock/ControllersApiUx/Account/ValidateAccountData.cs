@@ -14,6 +14,7 @@
     public class ValidateClientRegisterResponse
     {
         public int OpenedAccounts { get; set; }
+        public bool IsNewClient { get; set; }
         public SegipClientResponse SegipClientResponse { get; set; }
     }
 
@@ -139,5 +140,25 @@
         Widower,
         Divorced,
         None
+    }
+
+    public class Catalogs 
+    { 
+        public List<MaritalStatuses> MaritalStatuses { get; set; }
+        public List<EconomicActitities> EconomicActivities { get; set; }
+    }
+
+    public class MaritalStatuses 
+    { 
+        public string Id { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class EconomicActitities 
+    { 
+        public int ActivitySubgroup { get; set; }
+        public int ActivityGroup { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
