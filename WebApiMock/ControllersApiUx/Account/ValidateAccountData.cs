@@ -161,4 +161,38 @@
         public int Id { get; set; }
         public string Name { get; set; }
     }
+
+    public class ResponseDocument 
+    {
+        public string Document { get; set; }
+    }
+
+    public enum InformativeDocumentName 
+    {
+        CONTRACT,
+        TERMS,
+        REGULATIONS
+    }
+
+    public class SendOtpRequest
+    {
+        public string PhoneNumber { get; set; }
+    }
+
+    public class SendOtpResponse
+    {
+        public string Sid { get; set; }
+    }
+
+    public class VerifyOtpRequest
+    { 
+        public string PhoneNumber { get; set; }
+        public string Code { get; set; }
+        public string Sid { get; set; }
+    }
+
+    public class VerifyOtpResponse
+    {
+        public string status { get; set; } = "approved";
+    }
 }

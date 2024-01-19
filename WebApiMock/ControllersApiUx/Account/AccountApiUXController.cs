@@ -414,5 +414,121 @@ namespace WebApiMock.ControllersApiUx.Account
                 return Ok(result);
             }
         }
+
+        [HttpGet]
+        [Produces("application/json")]
+        [Route("/v1/pagos/bff/{informativeDocumentName}/informative-documents")]
+        public ActionResult<ResponseDocument> GetDocument([FromRoute] InformativeDocumentName informativeDocumentName)
+        {
+            var filePath = "";
+            switch (informativeDocumentName) 
+            {
+                case InformativeDocumentName.CONTRACT:
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/documents/contract.json");
+                    break;
+                case InformativeDocumentName.REGULATIONS:
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/documents/regulations.json");
+                    break;
+                case InformativeDocumentName.TERMS:
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/documents/terms.json");
+                    break;
+                default:
+                    filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/documents/terms.json");
+                    break;
+            }
+
+            using (StreamReader r = new StreamReader(filePath, Encoding.UTF8))
+            {
+                string json = r.ReadToEnd();
+                var result = JsonConvert.DeserializeObject<ResponseDocument>(json);
+                return Ok(result);
+            }
+        }
+
+        [HttpPost]
+        [Produces("application/json")]
+        [Route("/v1/pagos/bff/otp/send")]
+        public ActionResult<SendOtpResponse> SendOtp([FromBody] SendOtpRequest request) 
+        {
+            switch (request.PhoneNumber) 
+            {
+                case "70000001": 
+                    return Ok(new SendOtpResponse { Sid = "VEfeb8916328c15d871240cf34742566b6" });
+                case "70000002":
+                    return BadRequest(
+                        new ErrorResponse 
+                        { 
+                            Errors = 
+                                { 
+                                    new Error 
+                                    { 
+                                        Code = "invalid_phone_number", 
+                                        Name = "generalErrors", 
+                                        Reason = "El número de telefono es inválido." 
+                                    } 
+                            }
+                        }
+                    );
+                default: return Ok(new SendOtpResponse { Sid = "VEfeb8916328c15d871240cf34742566b6" });
+            }
+        }
+
+        [HttpPost]
+        [Produces("application/json")]
+        [Route("/v1/pagos/bff/otp/verify")]
+        public ActionResult<VerifyOtpResponse> VerifyOtp([FromBody] VerifyOtpRequest request)
+        {
+            switch (request.Code)
+            {
+                case "1111":
+                    return Ok(new VerifyOtpResponse());
+                case "2222":
+                    return BadRequest(
+                        new ErrorResponse
+                        {
+                            Errors =
+                                {
+                                    new Error
+                                    {
+                                        Code = "max_attempts_reached",
+                                        Name = "generalErrors",
+                                        Reason = "Se alcanzó el intento máximo de verificaciones con este código."
+                                    }
+                            }
+                        }
+                    );
+                case "3333":
+                    return BadRequest(
+                        new ErrorResponse
+                        {
+                            Errors =
+                                {
+                                    new Error
+                                    {
+                                        Code = "invalid_code",
+                                        Name = "generalErrors",
+                                        Reason = "El código es inválido"
+                                    }
+                            }
+                        }
+                    );
+                case "4444":
+                    return BadRequest(
+                        new ErrorResponse
+                        {
+                            Errors =
+                                {
+                                    new Error
+                                    {
+                                        Code = "expired_code",
+                                        Name = "generalErrors",
+                                        Reason = "El código expiró."
+                                    }
+                            }
+                        }
+                    );
+                default: return Ok(new VerifyOtpResponse());
+            }
+        }
     }
 }
