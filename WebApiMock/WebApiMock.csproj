@@ -9,6 +9,7 @@
 
     <ItemGroup>
       <_ContentIncludedByDefault Remove="ControllersApiUx\Account\GetHomeMov1.json" />
+      <_ContentIncludedByDefault Remove="Controllers\Account\Comprobantes.json" />
     </ItemGroup>
 
     <ItemGroup>

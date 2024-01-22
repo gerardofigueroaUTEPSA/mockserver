@@ -1,0 +1,65 @@
+﻿[
+  {
+    "id": "01122023/295/140/262/0001",
+    "transactionVoucher": {
+      "transactionId": 19462264,
+      "amount": -80,
+      "currency": 0,
+      "date": "10/22/2023 00:00:00",
+      "debitCredit": "D",
+      "payerOriginHolder": "VENTURA SIMON ELIZABETH",
+      "payerProductInstanceReference": {
+        "referenceAccountDisplayName": "8766184015",
+        "referenceAccountTypeName": ""
+      },
+      "transactionType": {
+        "moduleCode": 400,
+        "transactionNumberCode": 250,
+        "ordinalCode": 10,
+        "description": "ACH Recibida (Express)"
+      },
+      "transactionDescription": {
+        "text": ""
+      },
+      "details": [
+        {
+          "type": "Cuenta destino",
+          "text": "1234"
+        },
+        {
+          "type": "Nombre destino",
+          "text": "Amilcar Ma"
+        },
+        {
+          "type": "Descripción Moneda",
+          "text": "Bolivianos"
+        }
+      ]
+    }
+  },
+  {
+    "id": "01122023/295/140/262/0002",
+    "transactionVoucher": {
+      "transactionId": 1,
+      "amount": -900,
+      "currency": 0,
+      "date": "04/22/2023 00:00:00",
+      "debitCredit": "D",
+      "payerOriginHolder": "",
+      "payerProductInstanceReference": {
+        "referenceAccountDisplayName": "",
+        "referenceAccountTypeName": ""
+      },
+      "transactionType": {
+        "moduleCode": 66,
+        "transactionNumberCode": 301,
+        "ordinalCode": 10,
+        "description": "Retiro en ATM propio"
+      },
+      "transactionDescription": {
+        "text": ""
+      },
+      "details": []
+    }
+  }
+]

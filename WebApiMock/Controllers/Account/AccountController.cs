@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Text;
+using WebApiMock.ControllersApiUx.Account;
 
 namespace WebApiMock.Controllers.Account;
 
@@ -61,6 +62,37 @@ public class AccountController : ControllerBase
             result.TransactionHistory = result.TransactionHistory.Skip(limit * (page - 1)).Take(limit).ToList();
 
             if (result is null || result.TransactionHistory is null || result.TransactionHistory.Count == 0) return NoContent();
+            return Ok(result);
+        }
+    }
+
+    // Listas BDN
+    [HttpGet]
+    [Produces("application/json")]
+    [Route("Bsol/BusinessApiKyc/v1/BlackList/Check/Customer/{DocumentNumber}/Retrieve")]
+    public ActionResult ListaBdn([FromRoute] string DocumentNumber)
+    {
+        switch (DocumentNumber) 
+        {
+            case "9746660": return Ok();
+            case "9746661": return Conflict();
+            default: return Ok();
+        }
+    }
+
+    //Comprobantes
+    [HttpGet]
+    [Produces("application/json")]
+    [Route("Bsol/BusinessApiPayment/v1/Operations/Transaction/Voucher/Retrieve")]
+    public ActionResult<ComprobanteRaiz> GetComprobantes([FromQuery] string VoucherId)
+    {
+        var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Controllers/Account/Comprobantes.json");
+
+        using (StreamReader r = new StreamReader(filePath, Encoding.UTF8))
+        {
+            string json = r.ReadToEnd();
+            var results = JsonConvert.DeserializeObject<List<ComprobanteRaiz>>(json);
+            var result = results!.FirstOrDefault(x => x.Id.Equals(VoucherId));
             return Ok(result);
         }
     }
