@@ -375,6 +375,21 @@ namespace WebApiMock.ControllersApiUx.Account
 
         [HttpGet]
         [Produces("application/json")]
+        [Route("/v1/pagos/bff/history/voucher")]
+        public ActionResult<ComprobanteCore> GetVoucherQuery([FromQuery] string voucherId)
+        {
+            var filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "ControllersApiUx/Account/GetMovementsUx1.json");
+            using (StreamReader r = new StreamReader(filePath, Encoding.UTF8))
+            {
+                string json = r.ReadToEnd();
+                var data = JsonConvert.DeserializeObject<List<ComprobanteCore>>(json);
+                var result = data!.FirstOrDefault(x => x.ReferenceId == voucherId);
+                return Ok(result);
+            }
+        }
+
+        [HttpGet]
+        [Produces("application/json")]
         [Route("/v1/pagos/bff/client/{documentNumber}/segip")]
         public ActionResult<SegipClientResponse> GetSegip([FromRoute] string documentNumber, [FromQuery] string complement)
         {
@@ -529,6 +544,14 @@ namespace WebApiMock.ControllersApiUx.Account
                     );
                 default: return Ok(new VerifyOtpResponse());
             }
+        }
+
+        [HttpPost]
+        [Produces("application/json")]
+        [Route("/v1/pagos/bff/customer")]
+        public ActionResult<ClientRegisterResponse> RegisterClient([FromBody] ClientRegisterRequest request) 
+        {
+            return Ok(new ClientRegisterResponse{ PartyId = "12345" });
         }
     }
 }

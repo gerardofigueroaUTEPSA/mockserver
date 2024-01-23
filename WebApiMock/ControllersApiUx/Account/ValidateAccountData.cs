@@ -195,4 +195,29 @@
     {
         public string status { get; set; } = "approved";
     }
+
+    public class ClientRegisterRequest 
+    {
+        public string BankRelationPurpouse { get; set; } = string.Empty;
+        public long DocumentNumber { get; set; }
+        public string Complement { get; set; } = string.Empty;
+        public string Names { get; set; } = string.Empty;
+        public string IdentificationType { get; set; }
+        public string FirstSurname { get; set; } = string.Empty;
+        public string SecondSurname { get; set; } = string.Empty;
+        public DateOnly BirthDate { get; set; }
+        public string Gender { get; set; }
+        public string MaritalStatus { get; set; }
+        public string DeclaredMaritalStatus { get; set; }
+        public int NationalityId { get; set; }
+        public string PhoneNumber { get; set; } = string.Empty;
+        public string AddressDescription { get; set; } = string.Empty;
+        public decimal MonthlyAverageIncome { get; set; }
+        public int ActivityId { get; set; }
+    }
+
+    public class ClientRegisterResponse
+    {
+        public string PartyId { get; set; }
+    }
 }

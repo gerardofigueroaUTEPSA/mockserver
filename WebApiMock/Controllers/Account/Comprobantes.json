@@ -23,15 +23,19 @@
       },
       "details": [
         {
-          "type": "Cuenta destino",
+          "type": "destination_account",
           "text": "1234"
         },
         {
-          "type": "Nombre destino",
+          "type": "destination_holder",
           "text": "Amilcar Ma"
         },
         {
-          "type": "Descripción Moneda",
+          "type": "destination_bank",
+          "text": "Banco Economico"
+        },
+        {
+          "type": "destination_currency",
           "text": "Bolivianos"
         }
       ]
