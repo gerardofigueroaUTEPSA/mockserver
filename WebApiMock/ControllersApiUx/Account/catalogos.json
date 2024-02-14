@@ -40,5 +40,43 @@
       "id": 99002,
       "name": "ESTUDIANTES"
     }
+  ],
+  "ocupations": [
+    {
+      "id": 0,
+      "name": "No Registra"
+    },
+    {
+      "id": 1,
+      "name": "Empleado"
+    },
+    {
+      "id": 2,
+      "name": "Obrero"
+    },
+    {
+      "id": 3,
+      "name": "Ama de casa"
+    },
+    {
+      "id": 4,
+      "name": "Trabajador independiente"
+    },
+    {
+      "id": 6,
+      "name": "Empresario"
+    },
+    {
+      "id": 7,
+      "name": "Jubilado"
+    },
+    {
+      "id": 8,
+      "name": "Agropecuario"
+    },
+    {
+      "id": 9,
+      "name": "Estudiante"
+    }
   ]
 }

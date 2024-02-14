@@ -15,6 +15,7 @@
     {
         public int OpenedAccounts { get; set; }
         public bool IsNewClient { get; set; }
+        public string ClientCode { get; set; } = "45367";
         public SegipClientResponse SegipClientResponse { get; set; }
     }
 
@@ -25,6 +26,7 @@
         public string FirstSurname { get; set; } = string.Empty;
         public string SecondSurname { get; set; } = string.Empty;
         public string Nationality { get; set; } = string.Empty;
+        public int NationalityId { get; set; } = 2;
         public string PlaceBirth { get; set; } = string.Empty;
         public DateTime DateOfBirth { get; set; }
         public string MaritalStatus { get; set; }
@@ -146,11 +148,18 @@
     { 
         public List<MaritalStatuses> MaritalStatuses { get; set; }
         public List<EconomicActitities> EconomicActivities { get; set; }
+        public List<Ocupations> Ocupations { get; set; }
     }
 
     public class MaritalStatuses 
     { 
         public string Id { get; set; }
+        public string Name { get; set; }
+    }
+
+    public class Ocupations
+    {
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 
@@ -219,5 +228,27 @@
     public class ClientRegisterResponse
     {
         public string PartyId { get; set; }
+    }
+
+    public class LoginResponse
+    {
+        public string AccessToken { get; set; }
+        public string IdentityToken { get; set; }
+        public string RefreshToken { get; set; }
+        public string TokenType { get; set; }
+    }
+
+    public class ClientInformationResponse {
+        public string AccountId { get; set; } = "631506";
+        public string ClientId { get; set; } = "3164212";
+        public string Device { get; set; } = "device 1";
+        public string PhoneNumber { get; set; } = "74655611";
+        public string DocumentNumber { get; set; } = "65498731";
+        public string DocumentExtension { get; set; } = "LP";
+        public string Status { get; set; } = "Active";
+        public string Name { get; set; } = "Ambiente DEV";
+        public string LastName { get; set; } = "Ramirez vasquez";
+        public string Gender { get; set; } = "Female";
+        public string BirthDate { get; set; } = "1996-02-14T00:00:00";
     }
 }

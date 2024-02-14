@@ -9,6 +9,11 @@ namespace WebApiMock.Controllers.Account
         public TransactionVoucher TransactionVoucher { get; set; }
     }
 
+    public class BlackList {
+        public int ValidationError { get; set; }
+        public string ValidationDescription { get; set; }
+    }
+
     public class TransactionVoucher
     {
         public int TransactionId { get; set; }

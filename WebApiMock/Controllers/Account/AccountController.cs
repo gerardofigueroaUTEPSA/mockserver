@@ -17,15 +17,16 @@ public class AccountController : ControllerBase
     {
         return Ok(GetAccountData.GetAccountById(accountId));
     }
-    
+
     [HttpGet]
     [Produces("application/json")]
     [Route("/SavingsAccount/{accountId}/History/Retrieve")]
-    public ActionResult<MovementData> GetMovements([FromRoute] string accountId, [FromQuery] int page, [FromQuery] int limit, 
+    public ActionResult<MovementData> GetMovements([FromRoute] string accountId, [FromQuery] int page, [FromQuery] int limit,
         [FromQuery] int minimiunAmount, [FromQuery] int maximunAmount, DateOnly? startDate, DateOnly? endDate)
     {
         string filePath = "";
-        switch (accountId) {
+        switch (accountId)
+        {
             case "1000000C-0000-0000-000C-1111C1111C11":
                 filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Controllers/Account/MovementsUser1.json");
                 break;
@@ -44,7 +45,7 @@ public class AccountController : ControllerBase
             string json = r.ReadToEnd();
             var data = JsonConvert.DeserializeObject<MovementData>(json);
             var result = new MovementData { TransactionHistory = data.TransactionHistory };
-            
+
             if (maximunAmount != 0 && minimiunAmount != 0)
             {
                 result.TransactionHistory = result.TransactionHistory
@@ -72,7 +73,7 @@ public class AccountController : ControllerBase
     [Route("Bsol/BusinessApiKyc/v1/BlackList/Check/Customer/{DocumentNumber}/Retrieve")]
     public ActionResult ListaBdn([FromRoute] string DocumentNumber)
     {
-        switch (DocumentNumber) 
+        switch (DocumentNumber)
         {
             case "9746660": return Ok();
             case "9746661": return Conflict();
@@ -95,5 +96,23 @@ public class AccountController : ControllerBase
             var result = results!.FirstOrDefault(x => x.Id.Equals(VoucherId));
             return Ok(result);
         }
+    }
+
+    [HttpGet]
+    [Produces("application/json")]
+    [Route("Bsol/BusinessApiKyc/v1/Segip/{identification}")]
+    public ActionResult GetSegip([FromRoute] int identification)
+    {
+        return File(GetAccountData.getTestSegipPdf("6031208"), "application/pdf", "report.pdf");
+    }
+
+    [HttpPost]
+    [Produces("application/json")]
+    [Route("Bsol/BusinessApiKyc/v1/BlackList/Check/Customer/{documentRoot}")]
+    public ActionResult<BlackList> GetBlackList([FromRoute] int documentRoot)
+    {
+        return Ok(
+                new BlackList { ValidationDescription = "", ValidationError = 0 }
+        );
     }
 }
